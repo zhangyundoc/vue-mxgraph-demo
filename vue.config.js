@@ -5,9 +5,9 @@ function resolve(dir) {
 }
 
 module.exports = {
-    publicPath: './',
-    outputDir: 'dist',
-    lintOnSave: true,
+    // publicPath: './',
+    // outputDir: 'dist',
+    // lintOnSave: true,
     chainWebpack: (config) => {
         config.module
             .rule('mxClient')
