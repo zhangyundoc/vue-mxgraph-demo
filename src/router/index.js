@@ -8,20 +8,12 @@ const routes = [
     {
         path: '/',
         name: 'Layout',
-        component: Layout,
-        redirect: '/flow',
-        children: [
-            {
-                path: '/flow',
-                name: 'flow',
-                component: () => import('../views/mxGraph/index.vue')
-            }
-        ]
+        component: () => import('../views/mxGraph/index.vue')
     }
 ]
 
 const router = new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     base: process.env.BASE_URL,
     routes
 })
