@@ -17,6 +17,11 @@ const routes = [
                 component: () => import('../views/mxGraph/index.vue')
             }
         ]
+    },
+    {
+        path: '/flow',
+        name: 'Flow',
+        component: () => import('../views/mxGraph/index.vue')
     }
 ]
 
