@@ -6,7 +6,7 @@ function resolve(dir) {
 
 module.exports = {
     // publicPath: './',
-    // outputDir: 'dist',
+    outputDir: 'docs',
     // lintOnSave: true,
     chainWebpack: (config) => {
         config.module
