@@ -1,5 +1,7 @@
 # vue-mxgraph-demo
 
+[在线预览](https://zhangyundoc.github.io/vue-mxgraph-demo/dist/#/flow)
+
 ## Project setup
 ```
 yarn install
