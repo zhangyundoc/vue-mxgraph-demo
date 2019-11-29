@@ -1,4 +1,5 @@
 import { Breadcrumb, BreadcrumbItem } from 'kpc';
+import { createGraph } from '../../utils/graph.js';
 import {
     mxGraph as MxGraph,
     mxUtils as MxUtils,
@@ -43,7 +44,9 @@ export default {
 
     methods: {
         createGraph() {
-            this.graph = new MxGraph(this.$refs.container);
+            // let graph = new MxGraph(this.$refs.container);
+            let graph = createGraph(this.$refs.container);
+            this.graph = graph;
         },
         setEdgeColor(edge, color) {
             const style = this.R.prop('style', this.graph.view.getState(edge, true))
